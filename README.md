@@ -1,3 +1,11 @@
+[![TYPO3 10](https://img.shields.io/badge/TYPO3-10-orange.svg)](https://get.typo3.org/version/10)
+[![TYPO3 11](https://img.shields.io/badge/TYPO3-11-orange.svg)](https://get.typo3.org/version/11)
+[![Latest Stable Version](http://poser.pugx.org/dskzpt/personio/v)](https://packagist.org/packages/dskzpt/personio)
+[![Total Downloads](http://poser.pugx.org/dskzpt/personio/downloads)](https://packagist.org/packages/dskzpt/personio)
+[![Latest Unstable Version](http://poser.pugx.org/dskzpt/personio/v/unstable)](https://packagist.org/packages/dskzpt/personio)
+[![License](http://poser.pugx.org/dskzpt/personio/license)](https://packagist.org/packages/dskzpt/personio)
+[![PHP Version Require](http://poser.pugx.org/dskzpt/personio/require/php)](https://packagist.org/packages/dskzpt/personio)
+
 TYPO3 Extension "personio"
 =================================
 
