@@ -6,14 +6,18 @@ namespace DSKZPT\Personio\Client;
 
 use Psr\Http\Message\RequestFactoryInterface;
 use SimpleXMLElement;
+use TYPO3\CMS\Core\Http\RequestFactory;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 class PersonioApiClient
 {
-    private RequestFactoryInterface $requestFactory;
+    private RequestFactory $requestFactory;
 
-    public function __construct() {
-        $this->requestFactory = GeneralUtility::makeInstance(RequestFactoryInterface::class);
+    public function __construct()
+    {
+        /** @var RequestFactory $requestFactory */
+        $requestFactory = GeneralUtility::makeInstance(RequestFactoryInterface::class);
+        $this->requestFactory = $requestFactory;
     }
 
     /**
@@ -23,19 +27,20 @@ class PersonioApiClient
     {
         $additionalOptions = [
             'headers' => ['Cache-Control' => 'no-cache'],
-            'allow_redirects' => false
+            'allow_redirects' => false,
         ];
 
         $response = $this->requestFactory->request($feedUrl, 'GET', $additionalOptions);
 
         if ($response->getStatusCode() === 200
-            && strpos($response->getHeaderLine('Content-Type'), 'text/xml') === 0) {
+            && str_starts_with($response->getHeaderLine('Content-Type'), 'text/xml')) {
             $content = $response->getBody()->getContents();
 
+            $contentString = simplexml_load_string($content, SimpleXMLElement::class, LIBXML_NOCDATA);
+
             return json_decode(
-                json_encode(
-                    simplexml_load_string($content, SimpleXMLElement::class, LIBXML_NOCDATA)
-                ), true
+                (string)json_encode($contentString),
+                true
             )['position'];
         }
 

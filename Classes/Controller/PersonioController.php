@@ -4,24 +4,26 @@ declare(strict_types=1);
 
 namespace DSKZPT\Personio\Controller;
 
-use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use DSKZPT\Personio\Client\PersonioApiClient;
+use Psr\Http\Message\ResponseInterface;
+use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 class PersonioController extends ActionController
 {
     private string $feedUrl = '';
 
-    protected ?PersonioApiClient $personioApiClient = null;
+    public function __construct(
+        private PersonioApiClient $personioApiClient,
+    ) {
+    }
 
     protected function initializeAction(): void
     {
         $this->buildSettings();
-        $this->personioApiClient = GeneralUtility::makeInstance(PersonioApiClient::class);
         $this->feedUrl = sprintf('%s?language=%s', $this->settings['feedUrl'], $this->settings['language']);
     }
 
-    public function listAction(): void
+    public function listAction(): ResponseInterface
     {
         foreach ($this->settings['filter'] as $filterKey => $filterValue) {
             if (is_null($filterValue) || $filterValue == '') {
@@ -32,20 +34,16 @@ class PersonioController extends ActionController
         $items = $this->personioApiClient->fetchFeedItems($this->feedUrl);
 
         if (!empty($this->settings['filter'])) {
-            $items = array_filter($items, array($this, 'filterItems'), ARRAY_FILTER_USE_BOTH);
+            $items = array_filter($items, [$this, 'filterItems'], ARRAY_FILTER_USE_BOTH);
         }
 
         $this->view->assign('items', $items);
+
+        return $this->htmlResponse();
     }
 
-    public function showAction(): void
+    public function showAction(): ResponseInterface
     {
-        if (!$this->request->hasArgument('uid')
-            && intval($this->request->getArgument('uid'))
-        ) {
-            return;
-        }
-
         $uid = $this->request->getArgument('uid');
 
         $items = $this->personioApiClient->fetchFeedItems($this->feedUrl);
@@ -57,6 +55,8 @@ class PersonioController extends ActionController
         ]);
 
         $GLOBALS['TSFE']->page['title'] = $item['name'];
+
+        return $this->htmlResponse();
     }
 
     private function buildSettings(): void

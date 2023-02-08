@@ -15,7 +15,7 @@ class ItemsProcFunc
     public function getFilterValues(array &$params): void
     {
         $params['items'] = [
-            ['None', '']
+            ['None', ''],
         ];
 
         $feedUrl = $params['flexParentDatabaseRow']['pi_flexform']['data']['sDEF']['lDEF']['settings.overwrite.feedUrl']['vDEF'];
@@ -24,6 +24,7 @@ class ItemsProcFunc
             return;
         }
 
+        /** @var PersonioApiClient $personioApiClient */
         $personioApiClient = GeneralUtility::makeInstance(PersonioApiClient::class);
         $items = $personioApiClient->fetchFeedItems($feedUrl);
 

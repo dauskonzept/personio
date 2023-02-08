@@ -19,11 +19,18 @@
         "GPL-2.0-or-later"
     ],
     "require": {
-		"php": "^7.4 || ^8.0",
+		"php": "^8.0",
 		"ext-libxml": "*",
 		"ext-simplexml": "*",
-	    "typo3/cms-core": "^10.4 || ^11"
+	    "typo3/cms-core": "^11"
     },
+	"require-dev": {
+		"ergebnis/composer-normalize": "^2.24",
+		"friendsoftypo3/phpstan-typo3": "^0.9.0",
+		"phpstan/extension-installer": "^1.2",
+		"phpstan/phpstan": "^1.4",
+		"typo3/coding-standards": "^0.7.1"
+	},
 	"autoload": {
         "psr-4": {
             "DSKZPT\\Personio\\": "Classes/"
@@ -51,5 +58,24 @@
 			"ergebnis/composer-normalize": true,
 			"phpstan/extension-installer": true
 		}
+	},
+	"scripts": {
+		"ci:composer:normalize": "@composer normalize --dry-run",
+		"ci:coverage": [
+			"@ci:coverage:functional"
+		],
+		"ci:coverage:functional": "phpunit -c Tests/Functional/phpunit.xml -d memory_limit=-1 --coverage-php=coverage/functional.cov Tests/Functional",
+		"ci:coverage:merge": "phpcov merge --clover=./coverage/clover.xml coverage/",
+		"ci:coverage:unit": "phpunit -c Tests/Unit/phpunit.xml -d memory_limit=-1 --coverage-php=coverage/unit.cov Tests/Unit",
+		"ci:php:cs-fixer": "php-cs-fixer fix -v --dry-run --using-cache no --diff",
+		"ci:php:lint": "find *.php Classes Configuration Tests -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
+		"ci:php:stan": "phpstan --no-progress",
+		"ci:test": [
+			"@ci:php:cs-fixer",
+			"@ci:php:stan"
+		],
+		"fix:php": [
+			"php-cs-fixer fix -v --using-cache no"
+		]
 	}
 }
