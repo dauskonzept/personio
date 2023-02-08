@@ -1,0 +1,46 @@
+{
+    "name": "dskzpt/personio",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "keywords": [
+        "TYPO3 CMS",
+        "extension",
+        "Personio",
+        "HR"
+    ],
+    "homepage": "https://www.dauskonzept.de",
+    "authors": [
+        {
+            "name": "Sven Petersen",
+            "role": "Developer"
+        }
+    ],
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "require": {
+        "typo3/cms-core": "^10.4 || ^11"
+    },
+    "require-dev": {
+        "php-coveralls/php-coveralls": "^2.1",
+        "typo3/cms-install": "^10.4 || ^11"
+    },
+    "autoload": {
+        "psr-4": {
+            "DSKZPT\\Personio\\": "Classes/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DSKZPT\\Personio\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "typo3-ter/personio": "self.version"
+    },
+    "extra": {
+        "typo3/cms": {
+           "extension-key": "personio"
+        }
+    }
+}
