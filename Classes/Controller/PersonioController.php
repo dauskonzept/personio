@@ -1,21 +1,23 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DSKZPT\Personio\Controller;
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
-use DSKZPT\Personio\Service\PersonioService;
+use DSKZPT\Personio\Client\PersonioApiClient;
 
 class PersonioController extends ActionController
 {
     private string $feedUrl = '';
 
-    protected ?PersonioService $personioService = null;
+    protected ?PersonioApiClient $personioApiClient = null;
 
     protected function initializeAction(): void
     {
         $this->buildSettings();
-        $this->personioService = GeneralUtility::makeInstance(PersonioService::class);
+        $this->personioApiClient = GeneralUtility::makeInstance(PersonioApiClient::class);
         $this->feedUrl = sprintf('%s?language=%s', $this->settings['feedUrl'], $this->settings['language']);
     }
 
@@ -27,7 +29,7 @@ class PersonioController extends ActionController
             }
         }
 
-        $items = $this->personioService->fetchFeedItems($this->feedUrl);
+        $items = $this->personioApiClient->fetchFeedItems($this->feedUrl);
 
         if (!empty($this->settings['filter'])) {
             $items = array_filter($items, array($this, 'filterItems'), ARRAY_FILTER_USE_BOTH);
@@ -46,7 +48,7 @@ class PersonioController extends ActionController
 
         $uid = $this->request->getArgument('uid');
 
-        $items = $this->personioService->fetchFeedItems($this->feedUrl);
+        $items = $this->personioApiClient->fetchFeedItems($this->feedUrl);
         $item = $items[array_search($uid, array_column($items, 'id'))];
 
         $this->view->assignMultiple([

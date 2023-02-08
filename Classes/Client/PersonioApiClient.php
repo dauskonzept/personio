@@ -1,18 +1,18 @@
 <?php
 
-namespace DSKZPT\Personio\Service;
+declare(strict_types=1);
 
+namespace DSKZPT\Personio\Client;
+
+use Psr\Http\Message\RequestFactoryInterface;
 use SimpleXMLElement;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
-use Psr\Http\Message\RequestFactoryInterface;
 
-class PersonioService extends ActionController
+class PersonioApiClient
 {
     private RequestFactoryInterface $requestFactory;
 
-    public function __construct()
-    {
+    public function __construct() {
         $this->requestFactory = GeneralUtility::makeInstance(RequestFactoryInterface::class);
     }
 

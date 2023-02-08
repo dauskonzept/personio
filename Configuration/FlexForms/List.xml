@@ -101,20 +101,6 @@
                             </config>
                         </TCEforms>
                     </settings.overwrite.showPageUid>
-                    <!-- Custom Text -->
-                    <settings.text>
-                        <TCEforms>
-                            <label>
-                                LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_settings.text
-                            </label>
-                            <config>
-                                <type>input</type>
-                                <size>255</size>
-                                <max>255</max>
-                                <eval>trim</eval>
-                            </config>
-                        </TCEforms>
-                    </settings.text>
                 </el>
             </ROOT>
         </sDEF>

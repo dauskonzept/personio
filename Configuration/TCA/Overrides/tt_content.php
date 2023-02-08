@@ -1,8 +1,8 @@
 <?php
-defined('TYPO3') or die();
+
+defined('TYPO3_MODE') or die();
 
 (static function() {
-
    // List Plugin
    $pluginSignature = 'personio_list';
    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(

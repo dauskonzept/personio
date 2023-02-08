@@ -1,8 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DSKZPT\Personio\Hook;
 
-use DSKZPT\Personio\Service\PersonioService;
+use DSKZPT\Personio\Client\PersonioApiClient;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 class ItemsProcFunc
 {
@@ -21,8 +24,8 @@ class ItemsProcFunc
             return;
         }
 
-        $personioService = new PersonioService();
-        $items = $personioService->fetchFeedItems($feedUrl);
+        $personioApiClient = GeneralUtility::makeInstance(PersonioApiClient::class);
+        $items = $personioApiClient->fetchFeedItems($feedUrl);
 
         $explode = explode('.', $params['field']);
 
