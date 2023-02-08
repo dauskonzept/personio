@@ -12,7 +12,7 @@ plugin.tx_personio {
     # cat=plugin.tx_personio/basic; type=string; label=Career site feed url i.e. https://mycompany.jobs.personio.de/xml
     feedUrl =
     # cat=plugin.tx_personio/basic; type=string; label=Default language (Available languages: de, en, fr, es, nl, it, pt)
-    language = de
+    language =
     # cat=plugin.tx_personio/basic; type=string; label=Page uid of list page
     listPageUid =
     # cat=plugin.tx_personio/basic; type=string; label=Page uid of detail page
