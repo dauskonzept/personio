@@ -41,7 +41,7 @@ class PersonioApiClient
             return json_decode(
                 (string)json_encode($contentString),
                 true
-            )['position'];
+            );
         }
 
         return [];
