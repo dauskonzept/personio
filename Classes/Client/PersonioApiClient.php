@@ -38,10 +38,12 @@ class PersonioApiClient
 
             $contentString = simplexml_load_string($content, SimpleXMLElement::class, LIBXML_NOCDATA);
 
-            return json_decode(
+            $return = json_decode(
                 (string)json_encode($contentString),
                 true
             )['position'];
+
+            return isset($return[0]) ? $return : [$return];
         }
 
         return [];
