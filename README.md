@@ -1,5 +1,6 @@
 [![TYPO3 11](https://img.shields.io/badge/TYPO3-11-orange.svg)](https://get.typo3.org/version/11)
 [![TYPO3 12](https://img.shields.io/badge/TYPO3-12-orange.svg)](https://get.typo3.org/version/12)
+[![TYPO3 13](https://img.shields.io/badge/TYPO3-13-orange.svg)](https://get.typo3.org/version/13)
 [![Latest Stable Version](http://poser.pugx.org/dskzpt/personio/v)](https://packagist.org/packages/dskzpt/personio)
 [![Total Downloads](http://poser.pugx.org/dskzpt/personio/downloads)](https://packagist.org/packages/dskzpt/personio)
 [![Latest Unstable Version](http://poser.pugx.org/dskzpt/personio/v/unstable)](https://packagist.org/packages/dskzpt/personio)
