@@ -26,8 +26,4 @@
             \DSKZPT\Personio\Controller\PersonioController::class => '',
         ]
     );
-
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('
-    @import \'EXT:personio/Configuration/TsConfig/ContentElementWizard.tsconfig\'
-  ');
 })();
