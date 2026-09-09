@@ -1,79 +1,137 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2022-01-01UTC00:00:00">
-        <header>
-            <authorName>Patrick Koschella</authorName>
-            <authorEmail>patrick@pkd.codes</authorEmail>
-        </header>
-        <body>
-            <trans-unit id="personio.message.no_items" xml:space="preserve">
-                <target>Derzeit sind keine Stellenausschreibungen verfügbar.</target>
-            </trans-unit>
-            <trans-unit id="personio.show.btn.back" xml:space="preserve">
-                <target>Zurück</target>
-            </trans-unit>
-            <trans-unit id="personio.show.btn.apply_now" xml:space="preserve">
-                <target>Jetzt bewerben</target>
-            </trans-unit>
-
-            <trans-unit id="label.office" xml:space="preserve">
-                <target>Büro</target>
-            </trans-unit>
-            <trans-unit id="label.department" xml:space="preserve">
-                <target>Abteilung</target>
-            </trans-unit>
-            <trans-unit id="label.recruitingCategory" xml:space="preserve">
-                <target>Rekrutierungskategorie</target>
-            </trans-unit>
-            <trans-unit id="label.name" xml:space="preserve">
-                <target>Name</target>
-            </trans-unit>
-            <trans-unit id="label.employmentType" xml:space="preserve">
-                <target>Art der Beschäftigung</target>
-            </trans-unit>
-            <trans-unit id="label.seniority" xml:space="preserve">
-                <target>Berufserfahrung</target>
-            </trans-unit>
-            <trans-unit id="label.schedule" xml:space="preserve">
-                <target>Arbeitszeit</target>
-            </trans-unit>
-            <trans-unit id="label.yearsOfExperience" xml:space="preserve">
-                <target>Berufserfahrung</target>
-            </trans-unit>
-            <trans-unit id="label.keywords" xml:space="preserve">
-                <target>Keywords</target>
-            </trans-unit>
-            <trans-unit id="label.occupation" xml:space="preserve">
-                <target>Tätigkeit</target>
-            </trans-unit>
-            <trans-unit id="label.occupationCategory" xml:space="preserve">
-                <target>Berufskategorie</target>
-            </trans-unit>
-            <trans-unit id="label.createdAt" xml:space="preserve">
-                <target>Erstellt am</target>
-            </trans-unit>
-
-            <trans-unit id="employmentType.permanent" xml:space="preserve">
-                <target>Festanstellung</target>
-            </trans-unit>
-            <trans-unit id="seniority.entry-level" xml:space="preserve">
-                <target>Einstiegsstufe</target>
-            </trans-unit>
-            <trans-unit id="seniority.experienced" xml:space="preserve">
-                <target>Erfahrene</target>
-            </trans-unit>
-            <trans-unit id="schedule.full-time" xml:space="preserve">
-                <target>Vollzeit</target>
-            </trans-unit>
-            <trans-unit id="schedule.part-time" xml:space="preserve">
-                <target>Teilzeit</target>
-            </trans-unit>
-            <trans-unit id="schedule.temporary" xml:space="preserve">
-                <target>Temporär</target>
-            </trans-unit>
-            <trans-unit id="schedule.intern" xml:space="preserve">
-                <target>Intern</target>
-            </trans-unit>
-        </body>
-    </file>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en">
+	<file id="f1">
+		<unit id="personio.message.no_items">
+			<segment xml:space="preserve">
+				<source />
+				<target>Derzeit sind keine Stellenausschreibungen verfügbar.</target>
+			</segment>
+		</unit>
+		<unit id="personio.show.btn.back">
+			<segment xml:space="preserve">
+				<source />
+				<target>Zurück</target>
+			</segment>
+		</unit>
+		<unit id="personio.show.btn.apply_now">
+			<segment xml:space="preserve">
+				<source />
+				<target>Jetzt bewerben</target>
+			</segment>
+		</unit>
+		<unit id="label.office">
+			<segment xml:space="preserve">
+				<source />
+				<target>Büro</target>
+			</segment>
+		</unit>
+		<unit id="label.department">
+			<segment xml:space="preserve">
+				<source />
+				<target>Abteilung</target>
+			</segment>
+		</unit>
+		<unit id="label.recruitingCategory">
+			<segment xml:space="preserve">
+				<source />
+				<target>Rekrutierungskategorie</target>
+			</segment>
+		</unit>
+		<unit id="label.name">
+			<segment xml:space="preserve">
+				<source />
+				<target>Name</target>
+			</segment>
+		</unit>
+		<unit id="label.employmentType">
+			<segment xml:space="preserve">
+				<source />
+				<target>Art der Beschäftigung</target>
+			</segment>
+		</unit>
+		<unit id="label.seniority">
+			<segment xml:space="preserve">
+				<source />
+				<target>Berufserfahrung</target>
+			</segment>
+		</unit>
+		<unit id="label.schedule">
+			<segment xml:space="preserve">
+				<source />
+				<target>Arbeitszeit</target>
+			</segment>
+		</unit>
+		<unit id="label.yearsOfExperience">
+			<segment xml:space="preserve">
+				<source />
+				<target>Berufserfahrung</target>
+			</segment>
+		</unit>
+		<unit id="label.keywords">
+			<segment xml:space="preserve">
+				<source />
+				<target>Keywords</target>
+			</segment>
+		</unit>
+		<unit id="label.occupation">
+			<segment xml:space="preserve">
+				<source />
+				<target>Tätigkeit</target>
+			</segment>
+		</unit>
+		<unit id="label.occupationCategory">
+			<segment xml:space="preserve">
+				<source />
+				<target>Berufskategorie</target>
+			</segment>
+		</unit>
+		<unit id="label.createdAt">
+			<segment xml:space="preserve">
+				<source />
+				<target>Erstellt am</target>
+			</segment>
+		</unit>
+		<unit id="employmentType.permanent">
+			<segment xml:space="preserve">
+				<source />
+				<target>Festanstellung</target>
+			</segment>
+		</unit>
+		<unit id="seniority.entry-level">
+			<segment xml:space="preserve">
+				<source />
+				<target>Einstiegsstufe</target>
+			</segment>
+		</unit>
+		<unit id="seniority.experienced">
+			<segment xml:space="preserve">
+				<source />
+				<target>Erfahrene</target>
+			</segment>
+		</unit>
+		<unit id="schedule.full-time">
+			<segment xml:space="preserve">
+				<source />
+				<target>Vollzeit</target>
+			</segment>
+		</unit>
+		<unit id="schedule.part-time">
+			<segment xml:space="preserve">
+				<source />
+				<target>Teilzeit</target>
+			</segment>
+		</unit>
+		<unit id="schedule.temporary">
+			<segment xml:space="preserve">
+				<source />
+				<target>Temporär</target>
+			</segment>
+		</unit>
+		<unit id="schedule.intern">
+			<segment xml:space="preserve">
+				<source />
+				<target>Intern</target>
+			</segment>
+		</unit>
+	</file>
 </xliff>
