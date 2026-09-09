@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en">
+	<file id="f1">
+		<unit id="categories.personio">
+			<segment>
+				<source>Personio</source>
+			</segment>
+		</unit>
+		<unit id="categories.personio.file">
+			<segment>
+				<source>File paths</source>
+			</segment>
+		</unit>
+		<unit id="categories.personio.basic">
+			<segment>
+				<source>Basic settings</source>
+			</segment>
+		</unit>
+		<unit id="settings.plugin.tx_personio.view.templateRootPath">
+			<segment>
+				<source>Path to template root (FE)</source>
+			</segment>
+		</unit>
+		<unit id="settings.plugin.tx_personio.view.partialRootPath">
+			<segment>
+				<source>Path to template partials (FE)</source>
+			</segment>
+		</unit>
+		<unit id="settings.plugin.tx_personio.view.layoutRootPath">
+			<segment>
+				<source>Path to template layouts (FE)</source>
+			</segment>
+		</unit>
+		<unit id="settings.plugin.tx_personio.settings.feedUrl">
+			<segment>
+				<source>Career site feed url i.e. https://mycompany.jobs.personio.de/xml</source>
+			</segment>
+		</unit>
+		<unit id="settings.plugin.tx_personio.settings.language">
+			<segment>
+				<source>Default language (Available languages: de, en, fr, es, nl, it, pt)</source>
+			</segment>
+		</unit>
+		<unit id="settings.plugin.tx_personio.settings.listPageUid">
+			<segment>
+				<source>Page uid of list page</source>
+			</segment>
+		</unit>
+		<unit id="settings.plugin.tx_personio.settings.showPageUid">
+			<segment>
+				<source>Page uid of detail page</source>
+			</segment>
+		</unit>
+	</file>
+</xliff>
