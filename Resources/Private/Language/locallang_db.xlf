@@ -1,11 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2022-01-01UTC00:00:00">
-        <header>
-            <authorName>Patrick Koschella</authorName>
-            <authorEmail>patrick@pkd.codes</authorEmail>
-        </header>
-        <body>
-        </body>
-    </file>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en">
+	<file id="f1" />
 </xliff>

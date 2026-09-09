@@ -54,8 +54,6 @@ class PersonioController extends ActionController
             'feedUrl' => parse_url($this->feedUrl),
         ]);
 
-        $GLOBALS['TSFE']->page['title'] = $item['name'];
-
         return $this->htmlResponse();
     }
 

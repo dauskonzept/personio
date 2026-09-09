@@ -3,14 +3,14 @@
         <sDEF>
             <ROOT>
                 <sheetTitle>
-                    LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_list_tab.settings
+                    LLL:personio.be:flexforms_list_tab.settings
                 </sheetTitle>
                 <type>array</type>
                 <el>
                     <!-- Feed URL -->
                     <settings.overwrite.feedUrl>
                         <label>
-                            LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_settings.feedUrl
+                            LLL:personio.be:flexforms_settings.feedUrl
                         </label>
                         <config>
                             <checkbox>1</checkbox>
@@ -23,7 +23,7 @@
                     <!-- Language -->
                     <settings.overwrite.language>
                         <label>
-                            LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_settings.language
+                            LLL:personio.be:flexforms_settings.language
                         </label>
                         <config>
                             <type>select</type>
@@ -31,49 +31,49 @@
                             <items>
                                 <numIndex index="0" type="array">
                                     <numIndex index="0">
-                                        LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_settings.language.0
+                                        LLL:personio.be:flexforms_settings.language.0
                                     </numIndex>
                                     <numIndex index="1"></numIndex>
                                 </numIndex>
                                 <numIndex index="1">
                                     <numIndex index="0">
-                                        LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_settings.language.1
+                                        LLL:personio.be:flexforms_settings.language.1
                                     </numIndex>
                                     <numIndex index="1">de</numIndex>
                                 </numIndex>
                                 <numIndex index="2">
                                     <numIndex index="0">
-                                        LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_settings.language.2
+                                        LLL:personio.be:flexforms_settings.language.2
                                     </numIndex>
                                     <numIndex index="1">en</numIndex>
                                 </numIndex>
                                 <numIndex index="3">
                                     <numIndex index="0">
-                                        LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_settings.language.3
+                                        LLL:personio.be:flexforms_settings.language.3
                                     </numIndex>
                                     <numIndex index="1">fr</numIndex>
                                 </numIndex>
                                 <numIndex index="4">
                                     <numIndex index="0">
-                                        LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_settings.language.4
+                                        LLL:personio.be:flexforms_settings.language.4
                                     </numIndex>
                                     <numIndex index="1">es</numIndex>
                                 </numIndex>
                                 <numIndex index="5">
                                     <numIndex index="0">
-                                        LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_settings.language.5
+                                        LLL:personio.be:flexforms_settings.language.5
                                     </numIndex>
                                     <numIndex index="1">nl</numIndex>
                                 </numIndex>
                                 <numIndex index="6">
                                     <numIndex index="0">
-                                        LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_settings.language.6
+                                        LLL:personio.be:flexforms_settings.language.6
                                     </numIndex>
                                     <numIndex index="1">it</numIndex>
                                 </numIndex>
                                 <numIndex index="7">
                                     <numIndex index="0">
-                                        LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_settings.language.7
+                                        LLL:personio.be:flexforms_settings.language.7
                                     </numIndex>
                                     <numIndex index="1">pt</numIndex>
                                 </numIndex>
@@ -84,7 +84,7 @@
                     <!-- Show Page Uid -->
                     <settings.overwrite.showPageUid>
                         <label>
-                            LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_settings.showPageUid
+                            LLL:personio.be:flexforms_settings.showPageUid
                         </label>
                         <config>
                             <type>group</type>
@@ -102,14 +102,14 @@
         <filter>
             <ROOT>
                 <sheetTitle>
-                    LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_list_tab.filter
+                    LLL:personio.be:flexforms_list_tab.filter
                 </sheetTitle>
                 <type>array</type>
                 <el>
                     <!-- Office -->
                     <settings.filter.office>
                         <label>
-                            LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_filter.office
+                            LLL:personio.be:flexforms_filter.office
                         </label>
                         <config>
                             <type>select</type>
@@ -121,7 +121,7 @@
                     <!-- Department -->
                     <settings.filter.department>
                         <label>
-                            LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_filter.department
+                            LLL:personio.be:flexforms_filter.department
                         </label>
                         <config>
                             <type>select</type>
@@ -133,7 +133,7 @@
                     <!-- Employment Type -->
                     <settings.filter.employmentType>
                         <label>
-                            LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_filter.employmentType
+                            LLL:personio.be:flexforms_filter.employmentType
                         </label>
                         <config>
                             <type>select</type>
@@ -145,7 +145,7 @@
                     <!-- Seniority -->
                     <settings.filter.seniority>
                          <label>
-                            LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_filter.seniority
+                            LLL:personio.be:flexforms_filter.seniority
                         </label>
                         <config>
                             <type>select</type>
@@ -157,7 +157,7 @@
                     <!-- Schedule -->
                     <settings.filter.schedule>
                         <label>
-                            LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_filter.schedule
+                            LLL:personio.be:flexforms_filter.schedule
                         </label>
                         <config>
                             <type>select</type>
@@ -169,7 +169,7 @@
                     <!-- Occupation -->
                     <settings.filter.occupation>
                         <label>
-                            LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_filter.occupation
+                            LLL:personio.be:flexforms_filter.occupation
                         </label>
                         <config>
                             <type>select</type>
@@ -181,7 +181,7 @@
                     <!-- OccupationCategory -->
                     <settings.filter.occupationCategory>
                         <label>
-                            LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_filter.occupationCategory
+                            LLL:personio.be:flexforms_filter.occupationCategory
                         </label>
                         <config>
                             <type>select</type>
@@ -193,7 +193,7 @@
                     <!-- RecruitingCategory -->
                     <settings.filter.recruitingCategory>
                         <label>
-                            LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_filter.recruitingCategory
+                            LLL:personio.be:flexforms_filter.recruitingCategory
                         </label>
                         <config>
                             <type>select</type>
@@ -205,7 +205,7 @@
                     <!-- Subcompany -->
                     <settings.filter.subcompany>
                         <label>
-                            LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_filter.subcompany
+                            LLL:personio.be:flexforms_filter.subcompany
                         </label>
                         <config>
                             <type>select</type>

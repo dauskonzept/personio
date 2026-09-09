@@ -3,13 +3,13 @@
 		<sDEF>
 			<ROOT>
 				<TCEforms>
-					<sheetTitle>LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_list_tab.settings</sheetTitle>
+					<sheetTitle>LLL:personio.be:flexforms_list_tab.settings</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el>
 					<!-- Feed URL -->
 					<settings.overwrite.feedUrl>
-                        <label>LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_settings.feedUrl</label>
+                        <label>LLL:personio.be:flexforms_settings.feedUrl</label>
                         <config>
                             <checkbox>1</checkbox>
                             <default></default>
@@ -19,41 +19,41 @@
 					</settings.overwrite.feedUrl>
 					<!-- Language -->
 					<settings.overwrite.language>
-                        <label>LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_settings.language</label>
+                        <label>LLL:personio.be:flexforms_settings.language</label>
                         <config>
                             <type>select</type>
                             <renderType>selectSingle</renderType>
                             <items>
                                 <numIndex index="0" type="array">
-                                    <numIndex index="0">LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_settings.language.0</numIndex>
+                                    <numIndex index="0">LLL:personio.be:flexforms_settings.language.0</numIndex>
                                     <numIndex index="1"></numIndex>
                                 </numIndex>
                                 <numIndex index="1">
-                                    <numIndex index="0">LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_settings.language.1</numIndex>
+                                    <numIndex index="0">LLL:personio.be:flexforms_settings.language.1</numIndex>
                                     <numIndex index="1">de</numIndex>
                                 </numIndex>
                                 <numIndex index="2">
-                                    <numIndex index="0">LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_settings.language.2</numIndex>
+                                    <numIndex index="0">LLL:personio.be:flexforms_settings.language.2</numIndex>
                                     <numIndex index="1">en</numIndex>
                                 </numIndex>
                                 <numIndex index="3">
-                                    <numIndex index="0">LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_settings.language.3</numIndex>
+                                    <numIndex index="0">LLL:personio.be:flexforms_settings.language.3</numIndex>
                                     <numIndex index="1">fr</numIndex>
                                 </numIndex>
                                 <numIndex index="4">
-                                    <numIndex index="0">LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_settings.language.4</numIndex>
+                                    <numIndex index="0">LLL:personio.be:flexforms_settings.language.4</numIndex>
                                     <numIndex index="1">es</numIndex>
                                 </numIndex>
                                 <numIndex index="5">
-                                    <numIndex index="0">LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_settings.language.5</numIndex>
+                                    <numIndex index="0">LLL:personio.be:flexforms_settings.language.5</numIndex>
                                     <numIndex index="1">nl</numIndex>
                                 </numIndex>
                                 <numIndex index="6">
-                                    <numIndex index="0">LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_settings.language.6</numIndex>
+                                    <numIndex index="0">LLL:personio.be:flexforms_settings.language.6</numIndex>
                                     <numIndex index="1">it</numIndex>
                                 </numIndex>
                                 <numIndex index="7">
-                                    <numIndex index="0">LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_settings.language.7</numIndex>
+                                    <numIndex index="0">LLL:personio.be:flexforms_settings.language.7</numIndex>
                                     <numIndex index="1">pt</numIndex>
                                 </numIndex>
                             </items>
@@ -61,7 +61,7 @@
 					</settings.overwrite.language>
 					<!-- List Page Uid -->
 					<settings.overwrite.listPageUid>
-                        <label>LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:flexforms_settings.listPageUid</label>
+                        <label>LLL:personio.be:flexforms_settings.listPageUid</label>
                         <config>
                             <type>group</type>
                             <internal_type>db</internal_type>

@@ -1,0 +1,36 @@
+categories:
+  personio: ~
+  personio.file:
+    parent: personio
+  personio.basic:
+    parent: personio
+
+settings:
+  plugin.tx_personio.view.templateRootPath:
+    default: 'EXT:personio/Resources/Private/Templates/'
+    type: string
+    category: personio.file
+  plugin.tx_personio.view.partialRootPath:
+    default: 'EXT:personio/Resources/Private/Partials/'
+    type: string
+    category: personio.file
+  plugin.tx_personio.view.layoutRootPath:
+    default: 'EXT:personio/Resources/Private/Layouts/'
+    type: string
+    category: personio.file
+  plugin.tx_personio.settings.feedUrl:
+    default: ''
+    type: string
+    category: personio.basic
+  plugin.tx_personio.settings.language:
+    default: ''
+    type: string
+    category: personio.basic
+  plugin.tx_personio.settings.listPageUid:
+    default: ''
+    type: string
+    category: personio.basic
+  plugin.tx_personio.settings.showPageUid:
+    default: ''
+    type: string
+    category: personio.basic
