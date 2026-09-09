@@ -7,7 +7,7 @@
    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
       'Personio',
       'List',
-      'LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:element_personio_list_title',
+      'LLL:personio.be:element_personio_list_title',
       'EXT:personio/Resources/Public/Icons/Extension.svg',
       'plugins',
       '',
@@ -18,7 +18,7 @@
    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
       'Personio',
       'Show',
-      'LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:element_personio_show_title',
+      'LLL:personio.be:element_personio_show_title',
       'EXT:personio/Resources/Public/Icons/Extension.svg',
       'plugins',
       '',
