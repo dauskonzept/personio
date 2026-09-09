@@ -6,8 +6,7 @@ mod.wizards.newContentElement.wizardItems.plugins {
 			description = LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:element_personio_list_description
 
 			tt_content_defValues {
-				CType = list
-				list_type = personio_list
+				CType = personio_list
 			}
 		}
 
@@ -17,8 +16,7 @@ mod.wizards.newContentElement.wizardItems.plugins {
 			description = LLL:EXT:personio/Resources/Private/Language/locallang_be.xlf:element_personio_show_description
 
 			tt_content_defValues {
-				CType = list
-				list_type = personio_show
+				CType = personio_show
 			}
 		}
 	}
